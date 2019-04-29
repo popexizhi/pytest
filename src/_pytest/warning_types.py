@@ -33,7 +33,7 @@ class PytestExperimentalApiWarning(PytestWarning, FutureWarning):
     removed completely in future version
     """
 
-    @classmethod
+    @classmethod #?
     def simple(cls, apiname):
         return cls(
             "{apiname} is an experimental api that may change over time".format(
