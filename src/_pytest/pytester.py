@@ -636,7 +636,7 @@ class Testdir(object):
         p.ensure("__init__.py")
         return p
 
-    def copy_example(self, name=None):
+    def copy_example(self, name=None): #  testdir.copy_example("conftest_usageerror/conftest.py") 的定义位置
         import warnings
         from _pytest.warning_types import PYTESTER_COPY_EXAMPLE
 
