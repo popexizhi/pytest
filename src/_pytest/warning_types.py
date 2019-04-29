@@ -57,4 +57,4 @@ class UnformattedWarning(object):
         return self.category(self.template.format(**kwargs))
 
 
-PYTESTER_COPY_EXAMPLE = PytestExperimentalApiWarning.simple("testdir.copy_example")
+PYTESTER_COPY_EXAMPLE = PytestExperimentalApiWarning.simple("testdir.copy_example") #定义位置
