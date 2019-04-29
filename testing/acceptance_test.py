@@ -27,7 +27,7 @@ def prepend_pythonpath(*dirs):
 
 class TestGeneralUsage(object):
     def test_config_error(self, testdir):
-        testdir.copy_example("conftest_usageerror/conftest.py")
+        testdir.copy_example("conftest_usageerror/conftest.py") #code read -下钻
         result = testdir.runpytest(testdir.tmpdir)
         assert result.ret == EXIT_USAGEERROR
         result.stderr.fnmatch_lines(["*ERROR: hello"])
